@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+    <header>
+        <img src="images/logo.png" class="logoA">
+    </header>
+    <main>
+    <!--Caja principal--->
+      <div class="container">  
+        <!--caja inicio--->
+        <section id="start"> 
+          <div class="texto">
+            El mundo ha perdido la mitad de sus áreas silvestres y estamos en crísis.
+            Pero estamos a tiempo de revertir esta situación y tú puedes ser parte del cambio.
+            <br><br>
+            Con tu compromiso, estarás ayudandonos a salvar la flora y fauna de la Patagonia.
+           </div>
+          <img class="fox" src="images/fox.jpg">
+          <br>
+           <button class="buttons" id="btnDonar">Donar</button></a>
+       </section>
+
+       <!--caja donacion--->
+      <section id="donate">
+        <h1>Donación Única</h1>
+      <p>Jamás entregues los datos de tu tarjeta a terceros. No aceptamos donaciones de medios no oficiales.</p>
+
+      <div class="box" id="box">
+        <label for="card_number" class="datos"><h4>Número de tarjeta</h4></label>
+          <input type="texto" id="cardNumber" placeholder="" value="" maxlength="16" required>
+        <label for="card_number" class="datos"><h4>Vencimiento</h4></label>
+          <input type="texto" id="month" maxlength="2" placeholder="" required>
+          <input type="texto" id="year" maxlength="2" placeholder="" required>
+        <label for="card_number" class="datos"><h4>Código de verificación</h4></label>
+        <input type="texto" id="cvc" maxlength="3" placeholder="" required>
+        <a onclick="myFunction" href="tarjeta.html" target="_blank"><h5>¿Qué es esto?</h5></a>
+        <br>
+        <button class="buttons" id="btnFinal">Finalizar</button></a>
+      </div>
+            <h4>
+              <br>Monto mínimo de donación:
+              <br>
+              $2.000 CLP
+              <br>
+              $5 USD
+            </h4>
+       </section>
+
+    <!--caja final--->      
+    <section id="final">
+      <h1>¡Muchas Gracias!</h1>
+      <h3>Tu donación nos ayudará muchísimo para seguir trabajando y ayudando animales que nos necesitan.</h3>
+      <img class="fox" src="images/fox.jpg">
+      <br>
+      <button class="buttons" id="btnStart">Volver</button></a>
+    </section>
+    </main>
+    <footer>
+      <div class="foot"></div>
+        <img class="logoB" src="images/footer.png">
+      </div>
+    </div>
+    </footer>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
+
