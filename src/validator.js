@@ -1,6 +1,6 @@
 const validator = {
-  isValid : (cardNumber) => {
-      let convert = cardNumber.split('').reverse()
+  isValid : (cardNumber) => { //objeto, recibe parametro con cardNumber//
+      let convert = cardNumber.split('').reverse();
       let sum     = 0;
       let n       = 0;
 
@@ -34,14 +34,6 @@ const validator = {
       }
 
       return string;
-  },
-
-  get maskify() {
-      return this._maskify;
-  },
-  
-  set maskify(value) {
-      this._maskify = value;
   }
 }
 

@@ -79,20 +79,6 @@ h3 {
     margin: 36px;
 }
 
-.foot {
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-    font-family: Manjari;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    display: flex;
-    color: #000000;
-    
-}
-
-
 .fox {
     width: 80%;   
     padding: 50px;
@@ -117,6 +103,8 @@ h5:hover{
 input{
     font-size: 25px;
     border-radius: 10px;
+    background-color: #FFBB89;
+    border: none;
 }
 
 #start{
@@ -132,8 +120,6 @@ input{
     line-height: 1;
     display: none;
 }
-
-
 
 #final{
     margin: 5% 15% 5% 15%;
