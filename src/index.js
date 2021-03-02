@@ -4,7 +4,6 @@ import validator from './validator.js';
     let cardNumber = "";
 
 //definir páginas
-
     let btnDonar = document.getElementById("btnDonar");
     let btnVerify = document.getElementById("btnVerify");
     let btnStart = document.getElementById("btnStart");
@@ -41,6 +40,7 @@ btnVerify.addEventListener("click", ()=>{ // si hago clic en el boton, ejecuto l
                 document.getElementById("donate").style.display = "none";
         }else {
             alert("Tarjeta "+ maskify + " inválida.")
+            //verificar que el usuario ingresa numeros correctos, usar enseguida el validation - refactorizar
         }
  });
 

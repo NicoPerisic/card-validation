@@ -3,8 +3,8 @@ const validator = {
       let convert = cardNumber.split('').reverse();
       let sum     = 0;
       let n       = 0;
-
-      for (let i = 0; i < convert.length; i++) {
+    //console.log(convert)
+      for (let i = 0; i < convert.length; i++) { //condicion para que el for funcione, el 0 es el primer numero//
           if (i % 2 === 1) {
               n = Number(convert[i] * 2);
 
@@ -38,3 +38,4 @@ const validator = {
 }
 
 export default validator;
+
