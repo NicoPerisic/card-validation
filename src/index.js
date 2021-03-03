@@ -9,26 +9,25 @@ import validator from './validator.js';
     let btnStart = document.getElementById("btnStart");
 
 /// boton avanzar
-btnDonar.addEventListener("click", ()=>{ // si hago clic en el boton, ejecuto la funcion para ocultar el modal con fcss
+btnDonar.addEventListener("click", ()=>{ // si hago clic en el boton, ejecuto la funcion para ocultar el modal con css
     
     document.getElementById("start").style.display = "none";
     document.getElementById("donate").style.display = "block";
 });
 
 ///boton volver
-btnStart.addEventListener("click", ()=>{ // si hago clic en el boton, ejecuto la funcion para ocultar el modal con fcss
+btnStart.addEventListener("click", ()=>{ // si hago clic en el boton, ejecuto la funcion para ocultar el modal con css
     
     document.getElementById("final").style.display = "none";
     document.getElementById("start").style.display = "block";
 });
 
-
-btnVerify.addEventListener("click", ()=>{ // si hago clic en el boton, ejecuto la funcion para ocultar el modal con fcss
+btnVerify.addEventListener("click", ()=>{ // si hago clic en el boton, ejecuto la funcion para ocultar el modal con css
     
-    cardNumber = document.getElementById("cardNumber").value;
-    let validation = validator.isValid(cardNumber);
-    let maskify = validator.maskify(cardNumber);
-            
+    cardNumber = document.getElementById("cardNumber").value; //
+    let validation = validator.isValid(cardNumber); //
+    let maskify = validator.maskify(cardNumber); //
+            //para verificar si es valido y aparezca el msj
         if(cardNumber.length < 16){
             alert("Ingresa un número de tarjeta válido.");
         }else if(cardNumber === 0){
